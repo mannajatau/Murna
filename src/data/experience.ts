@@ -8,45 +8,56 @@ export type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
+    title: 'Virtual Assistant',
+    company: 'Lifecome Care',
+    location: 'Remote',
+    dates: 'Jan 2026 – Present',
+    bullets: [
+      'Deliver remote administrative and operational support, optimizing daily calendar management, email dispatch, and client correspondence.',
+      'Manage electronic healthcare records, client databases, and scheduling systems with strict adherence to confidentiality and data compliance.',
+      'Streamline workflow automation across remote tools (MS Teams, Outlook, Excel) to improve task turnaround times and team responsiveness.',
+      'Serve as a key liaison between internal healthcare coordinators, stakeholders, and external clients to ensure seamless service delivery.'
+    ]
+  },
+  {
     title: 'Executive Assistant to the Executive Director',
     company: 'Stella Maris School & Subsidiaries',
-    location: 'Abuja',
+    location: 'Abuja, Nigeria',
     dates: 'July 2025 – Present',
     bullets: [
-      'Manage executive calendar, meetings, reminders, and priority scheduling.',
-      'Prepare meeting agendas, minutes, executive briefs, and follow-up trackers.',
-      'Coordinate cross-functional teams across multiple subsidiaries.',
-      'Track executive action items and ensure timely completion.',
-      'Support executive decision-making with structured documentation and reports.'
+      'Direct executive calendar logistics, priority scheduling, and complex meeting management across primary and subsidiary entities.',
+      'Author executive briefs, board-level meeting minutes, and high-priority action trackers to drive leadership follow-through.',
+      'Coordinate cross-functional department heads to align multi-subsidiary strategic projects with core organizational KPIs.',
+      'Design structured reporting mechanisms and decision-support documentation for executive-level review.'
     ]
   },
   {
     title: 'Administrative / Executive Support Assistant',
     company: 'Staredge Public Health Consultancy',
-    location: 'Abuja',
+    location: 'Abuja, Nigeria',
     dates: 'Nov 2024 – Jun 2025',
     bullets: [
-      'Supported executive scheduling, correspondence, and stakeholder engagement.',
-      'Assisted with recruitment coordination and staff documentation.',
-      'Followed up on project deliverables and reporting deadlines.'
+      'Facilitated high-level stakeholder engagement, managing official correspondence and executive scheduling for consultancy leadership.',
+      'Coordinated recruitment lifecycles, staff onboarding documentation, and human resource record governance.',
+      'Tracked project milestones and deliverable timelines across public health consulting operations to ensure on-time execution.'
     ]
   }
 ];
 
 export const highlights = [
   {
-    year: '2025–Now',
-    title: 'Executive Support at Scale',
-    detail: 'Coordinating leadership workflows across multiple subsidiaries with clear trackers and follow-through.'
+    year: '2026–Now',
+    title: 'Remote Executive Operations',
+    detail: 'Delivering end-to-end Virtual Assistant support at Lifecome Care, driving remote administrative efficiency and client coordination.'
   },
   {
-    year: '2024–2025',
-    title: 'Project Delivery Support',
-    detail: 'Supported deliverables, documentation, and stakeholder communication for consulting engagements.'
+    year: '2025–Now',
+    title: 'Multi-Entity Leadership Support',
+    detail: 'Managing executive workflows, board communication, and strategic tracking across Stella Maris School and its subsidiaries.'
   },
   {
     year: 'Core Strength',
-    title: 'Action Tracking & Reporting',
-    detail: 'Turning meetings into clear action items, owners, and timelines — consistently.'
+    title: 'Workflow Automation & Action Tracking',
+    detail: 'Bridging administration and technology to convert leadership strategies into structured timelines, owner tracking, and measurable outcomes.'
   }
 ] as const;
