@@ -3,10 +3,10 @@ import confluenceImg from '../assets/confluence-ebr.jpeg';
 import teamsImg from '../assets/teams-calendar.jpeg';
 import excelImg from '../assets/excel-dashboard.jpeg';
 import notionImg from '../assets/notion-projects.jpeg';
-import trackerImg from '../assets/tracker.jpeg';
-import automateImg from '../assets/automate.jpeg';
-import sharepointImg from '../assets/sharepoint.jpeg';
-import admincenterImg from '../assets/admincenter.jpeg';
+import trackerImg from '../assets/tracker.png';
+import automateImg from '../assets/automate.png';
+import sharepointImg from '../assets/sharepoint.png';
+import admincenterImg from '../assets/admincenter.png';
 
 export type ProjectCategory =
   | 'Executive Support'
