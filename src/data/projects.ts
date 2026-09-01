@@ -8,7 +8,6 @@ import AIAutomateImg from '../assets/Automate.jpeg';
 import SharepointImg from '../assets/Sharepoint.jpeg';
 import AdmincenterImg from '../assets/Admincenter.jpeg';
 
-
 export type ProjectCategory =
   | 'Executive Support'
   | 'Projects'
@@ -30,8 +29,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-   export const projects: Project[] = [
-  {
     id: 'jira-board',
     title: 'Jira Project Management Board',
     category: 'Projects',
@@ -43,7 +40,8 @@ export const projects: Project[] = [
       'Managed backlog grooming and sprint planning'
     ],
     tools: ['Jira', 'Agile', 'Scrum'],
-    image: jiraImg
+    outcomes: ['Streamlined issue tracking', 'Improved sprint predictability'],
+    images: [{ src: jiraImg, alt: 'Jira Board Overview' }]
   },
   {
     id: 'confluence-kb',
@@ -57,7 +55,8 @@ export const projects: Project[] = [
       'Standardized internal process documentation'
     ],
     tools: ['Confluence', 'Documentation'],
-    image: confluenceImg
+    outcomes: ['Centralized knowledge repository', 'Faster onboarding for new hires'],
+    images: [{ src: confluenceImg, alt: 'Confluence Knowledge Base' }]
   },
   {
     id: 'teams-calendar',
@@ -71,7 +70,8 @@ export const projects: Project[] = [
       'Automated meeting reminders and agenda distributions'
     ],
     tools: ['Microsoft Teams', 'Outlook', 'Microsoft 365'],
-    image: teamsImg
+    outcomes: ['Eliminated schedule conflicts', 'Improved team coordination'],
+    images: [{ src: teamsImg, alt: 'Teams Calendar Schedule' }]
   },
   {
     id: 'excel-dashboard',
@@ -85,7 +85,8 @@ export const projects: Project[] = [
       'Provided monthly operational reports to management'
     ],
     tools: ['Excel', 'Power Query', 'Data Analysis'],
-    image: excelImg
+    outcomes: ['Automated monthly reporting', 'Enhanced data visibility'],
+    images: [{ src: excelImg, alt: 'Excel Financial Dashboard' }]
   },
   {
     id: 'notion-workspace',
@@ -99,7 +100,8 @@ export const projects: Project[] = [
       'Maintained project milestones and deadlines'
     ],
     tools: ['Notion', 'Planning'],
-    image: notionImg
+    outcomes: ['Better resource alignment', 'Single source of truth for assets'],
+    images: [{ src: notionImg, alt: 'Notion Workspace Tracker' }]
   },
   {
     id: 'supervision-tracker',
@@ -113,7 +115,8 @@ export const projects: Project[] = [
       'Streamlined team communication and task delegation'
     ],
     tools: ['Tracking Systems', 'Operations Management'],
-    image: TrackerImg
+    outcomes: ['Increased field accountability', 'Real-time operational monitoring'],
+    images: [{ src: TrackerImg, alt: 'Supervision Tracker View' }]
   },
   {
     id: 'power-automate-flow',
@@ -127,7 +130,8 @@ export const projects: Project[] = [
       'Configured approval flow sequences for management sign-offs'
     ],
     tools: ['Power Automate', 'Microsoft 365', 'Workflow Automation'],
-    image: AIAutomateImg
+    outcomes: ['40% reduction in admin workload', 'Faster approval turnarounds'],
+    images: [{ src: AIAutomateImg, alt: 'Power Automate Workflow Diagram' }]
   },
   {
     id: 'sharepoint-portal',
@@ -141,7 +145,8 @@ export const projects: Project[] = [
       'Organized corporate document storage and versioning'
     ],
     tools: ['SharePoint', 'Microsoft 365'],
-    image: SharepointImg
+    outcomes: ['Secure document storage', 'Standardized document version control'],
+    images: [{ src: SharepointImg, alt: 'SharePoint Intranet Portal' }]
   },
   {
     id: 'admin-center-control',
@@ -155,6 +160,7 @@ export const projects: Project[] = [
       'Monitored system usage logs and health metrics'
     ],
     tools: ['M365 Admin Center', 'IT Support', 'Security'],
-    image: AdmincenterImg
-}
+    outcomes: ['Enhanced tenant security', 'Streamlined user provisioning'],
+    images: [{ src: AdmincenterImg, alt: 'M365 Admin Center Interface' }]
+  }
 ];
