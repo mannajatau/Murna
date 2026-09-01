@@ -3,10 +3,10 @@ import confluenceImg from '../assets/confluence-ebr.jpeg';
 import teamsImg from '../assets/teams-calendar.jpeg';
 import excelImg from '../assets/excel-dashboard.jpeg';
 import notionImg from '../assets/notion-projects.jpeg';
-import SupervisionTrackerdashboardImg from '../assets/Supervision-Tracker.jpeg';
-import PowerAutomateImg from '../assets/PowerAutomate.jpeg';
+import TrackerImg from '../assets/Tracker.jpeg';
+import AIAutomateImg from '../assets/Automate.jpeg';
 import SharepointImg from '../assets/Sharepoint.jpeg';
-import AdmincenterControlImg from '../assets/AdmincenterControl.jpeg';
+import AdmincenterImg from '../assets/Admincenter.jpeg';
 
 
 export type ProjectCategory =
@@ -30,193 +30,131 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: 'jira-sprints',
-    title: 'Sprint Board & Delivery Tracking',
+   export const projects: Project[] = [
+  {
+    id: 'jira-board',
+    title: 'Jira Project Management Board',
     category: 'Projects',
-    short:
-      'Managed visibility of tasks across statuses, removing blockers and ensuring clear ownership.',
-    role: 'Project coordination & tracking support',
+    short: 'Customized Jira setup for tracking sprint progress and issue workflows.',
+    role: 'Project Manager',
     responsibilities: [
-      'Maintained active sprint board with updated status and owners.',
-      'Followed up on blocked items, approvals, and QA returns to keep work moving.',
-      'Provided quick summaries to leadership on progress and bottlenecks.'
+      'Designed custom workflows and permission schemes',
+      'Configured automated rule triggers for status transitions',
+      'Managed backlog grooming and sprint planning'
     ],
-    tools: ['Jira', 'Confluence', 'Teams/Zoom'],
-    outcomes: [
-      'Improved daily visibility of priorities and risks.',
-      'Faster follow-up on approvals, QA, and blockers.',
-      'Clearer accountability across cross-functional work.'
-    ],
-    images: [{ src: jiraImg, alt: 'Jira sprint board screenshot' }]
+    tools: ['Jira', 'Agile', 'Scrum'],
+    image: jiraImg
   },
   {
-    id: 'ebr-index',
-    title: 'Executive Business Review Master Index',
-    category: 'Reporting',
-    short:
-      'Organized EBR reporting into a structured Confluence index with owners, status, and update cycles.',
-    role: 'Executive reporting & documentation',
-    responsibilities: [
-      'Built and maintained a master index for senior management reporting.',
-      'Set update cadence and captured last-updated status for each report.',
-      'Ensured confidentiality practices for leadership-only materials.'
-    ],
-    tools: ['Confluence', 'Google Workspace', 'Microsoft Word/Excel'],
-    outcomes: [
-      'Centralized leadership reporting access.',
-      'Reduced time spent finding latest versions.',
-      'Improved compliance with reporting deadlines.'
-    ],
-    images: [{ src: confluenceImg, alt: 'Confluence EBR template screenshot' }]
-  },
-  {
-    id: 'calendar-ops',
-    title: 'Executive Calendar & Meeting System',
+    id: 'confluence-kb',
+    title: 'Knowledge Base & Documentation Hub',
     category: 'Executive Support',
-    short:
-      'Coordinated meetings, recurring scrums, and executive sessions with clean scheduling and reminders.',
-    role: 'Executive calendar & coordination',
+    short: 'Centralized Confluence workspace for cross-team documentation and SOPs.',
+    role: 'Technical Writer / Admin',
     responsibilities: [
-      'Scheduled meetings across multiple time blocks and ensured invites were accurate.',
-      'Prepared reminders, agendas, and pre-read materials for sessions.',
-      'Kept meeting cadence consistent and aligned to priorities.'
+      'Structured space permissions and page hierarchies',
+      'Created reusable templates for meeting notes and project specs',
+      'Standardized internal process documentation'
     ],
-    tools: ['Microsoft Teams', 'Google Calendar', 'Zoom'],
-    outcomes: [
-      'Reduced scheduling conflicts and missed meetings.',
-      'Better preparedness through agendas and pre-reads.',
-      'Improved coordination for recurring sessions.'
+    tools: ['Confluence', 'Documentation'],
+    image: confluenceImg
+  },
+  {
+    id: 'teams-calendar',
+    title: 'Teams Executive Calendar & Coordination',
+    category: 'Executive Support',
+    short: 'Integrated scheduling and collaboration hub using MS Teams and Outlook.',
+    role: 'Executive Assistant',
+    responsibilities: [
+      'Managed complex calendar schedules and meeting logistics',
+      'Integrated shared calendars across multiple departments',
+      'Automated meeting reminders and agenda distributions'
     ],
-    images: [{ src: teamsImg, alt: 'Teams calendar view screenshot' }]
+    tools: ['Microsoft Teams', 'Outlook', 'Microsoft 365'],
+    image: teamsImg
   },
   {
     id: 'excel-dashboard',
-    title: 'Excel Reporting Dashboard (Pivot + Charts)',
+    title: 'Excel Financial & Data Dashboard',
     category: 'Reporting',
-    short:
-      'Built a quick reporting view with pivot summaries, filters, and charts for decision-making.',
-    role: 'Data organization & reporting',
+    short: 'Advanced data visualization and reporting model built with Excel.',
+    role: 'Data Analyst',
     responsibilities: [
-      'Cleaned and structured data for quick analysis.',
-      'Created pivot summaries and chart views for leadership updates.',
-      'Used slicers/filters to explore results by region/category.'
+      'Built interactive KPI tracking dashboards using PivotTables',
+      'Automated data cleanup using Power Query formulas',
+      'Provided monthly operational reports to management'
     ],
-    tools: ['Microsoft Excel', 'Google Sheets'],
-    outcomes: [
-      'Faster reporting during reviews.',
-      'Clearer insights through charts and pivot summaries.',
-      'Easier segmentation with slicers and filters.'
-    ],
-    images: [{ src: excelImg, alt: 'Excel dashboard screenshot' }]
+    tools: ['Excel', 'Power Query', 'Data Analysis'],
+    image: excelImg
   },
   {
-    id: 'notion-tracker',
-    title: 'Notion Project Tracker for Leadership Updates',
+    id: 'notion-workspace',
+    title: 'Notion Project & Asset Tracker',
     category: 'Planning',
-    short:
-      'Created a structured tracker with objectives, milestones, owners, and status updates for executive decisions.',
-    role: 'Project documentation & visibility',
+    short: 'Connected database system for resource allocation and task execution.',
+    role: 'Operations Coordinator',
     responsibilities: [
-      'Documented projects with objectives, milestones, start/due dates, and owners.',
-      'Maintained status updates to support timely executive decisions.',
-      'Kept information accessible and neatly organized.'
+      'Created relation/rollup databases for cross-project tracking',
+      'Built customized view templates for team members',
+      'Maintained project milestones and deadlines'
     ],
-    tools: ['Notion', 'Google Workspace'],
-    outcomes: [
-      'Improved project clarity for leadership.',
-      'Easier progress reporting and follow-ups.',
-      'More structured decision-making support.'
-    ],
-    images: [{ src: notionImg, alt: 'Notion projects table screenshot' }]
-  }
-];
-
-export const projectCategories: (ProjectCategory | 'All')[] = [
-  'All',
-  'Executive Support',
-  'Projects',
-  'Operations',
-  'Reporting',
-  'Planning',
- {
-    id: 'supervision-tracker-dashboard',
-    title: 'Supervision Tracker Dashboard',
-    category: 'Reporting',
-    short: 'Automated tracking dashboard for staff supervisions and compliance logging.',
-    role: 'IT Administrator & Program Assistant',
-    responsibilities: [
-      'Designed custom Excel tracking sheet for supervision schedules',
-      'Configured automated date calculations and conditional formatting'
-    ],
-    tools: ['Excel', 'SharePoint'],
-    outcomes: [
-      'Improved compliance monitoring accuracy',
-      'Reduced manual administrative tracking time'
-    ],
-    images: {
-      src: SupervisionTrackerdashboardImg,
-      alt: ['Supervision Tracker Dashboard Screenshot']
-    }
+    tools: ['Notion', 'Planning'],
+    image: notionImg
   },
   {
-    id: 'power-automate-workflow',
-    title: 'Power Automate Verification Flow',
+    id: 'supervision-tracker',
+    title: 'Supervision & Field Tracker',
     category: 'Operations',
-    short: 'Multi-stage automated verification flow integrated with SharePoint lists and Outlook.',
-    role: 'IT Administrator',
+    short: 'Operational oversight tool designed for field tracking and supervision.',
+    role: 'Operations Lead',
     responsibilities: [
-      'Built automated trigger conditions and switch branching logic',
-      'Configured email notifications for Care Coordinators and Administrators'
+      'Monitored daily field activities and performance metrics',
+      'Generated compliance and status updates',
+      'Streamlined team communication and task delegation'
     ],
-    tools: ['Power Automate', 'SharePoint', 'Outlook'],
-    outcomes: [
-      'Eliminated manual notification delays',
-      'Streamlined internal approval workflows'
-    ],
-    images: {
-      src: PowerAutomateImg,
-      alt: ['Power Automate Workflow Diagram']
-    }
+    tools: ['Tracking Systems', 'Operations Management'],
+    image: TrackerImg
   },
   {
-    id: 'sharepoint-data-migration',
-    title: 'SharePoint Architecture & Data Governance',
-    category: 'Executive Support',
-    short: 'Cloud restructuring and file taxonomy standardization for over 1,500 legacy documents.',
-    role: 'IT Administrator',
+    id: 'power-automate-flow',
+    title: 'PowerAutomate Workflow Automation',
+    category: 'Operations',
+    short: 'Automated notification and data sync workflows across M365 apps.',
+    role: 'Automation Specialist',
     responsibilities: [
-      'Executed full file migration from Dropbox to structured SharePoint libraries',
-      'Standardized metadata taxonomies and configured security clearance levels'
+      'Constructed automated flows between Email, Forms, and SharePoint',
+      'Reduced manual administrative tasks by 40%',
+      'Configured approval flow sequences for management sign-offs'
+    ],
+    tools: ['Power Automate', 'Microsoft 365', 'Workflow Automation'],
+    image: AIAutomateImg
+  },
+  {
+    id: 'sharepoint-portal',
+    title: 'SharePoint Intranet & Asset Repository',
+    category: 'Executive Support',
+    short: 'Structured document repository and team portal built on SharePoint.',
+    role: 'SharePoint Administrator',
+    responsibilities: [
+      'Configured site architecture, libraries, and access lists',
+      'Managed user permissions and security compliance',
+      'Organized corporate document storage and versioning'
     ],
     tools: ['SharePoint', 'Microsoft 365'],
-    outcomes: [
-      'Migrated and standardized 1,500+ files in under two weeks',
-      'Enhanced document access security and file organization'
-    ],
-    images: {
-      src: SharepointImg,
-      alt: ['SharePoint Site Structure']
-    }
+    image: SharepointImg
   },
   {
     id: 'admin-center-control',
-    title: 'Microsoft 365 Admin Center Governance',
+    title: 'M365 Admin Center Control & Governance',
     category: 'Operations',
-    short: 'Centralized cloud administration, user access control, and policy enforcement.',
-    role: 'IT Administrator',
+    short: 'Centralized admin management for user roles, security, and policies.',
+    role: 'IT System Admin',
     responsibilities: [
-      'Managed user licensing, security clearance levels, and active permissions',
-      'Monitored system access logs and enforced compliance standards'
+      'Managed user onboarding, licensing, and security roles',
+      'Implemented group policies and access security',
+      'Monitored system usage logs and health metrics'
     ],
-    tools: ['Microsoft 365', 'Admin Center'],
-    outcomes: [
-      'Standardized user management across active administrative accounts',
-      'Maintained organizational compliance and access control'
-    ],
-    images: {
-      src: AdmincenterControlImg,
-      alt: ['Microsoft 365 Admin Center Control Panel']
-    }
-  },
+    tools: ['M365 Admin Center', 'IT Support', 'Security'],
+    image: AdmincenterImg
 }
 ];
