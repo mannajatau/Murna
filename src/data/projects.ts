@@ -3,10 +3,10 @@ import confluenceImg from '../assets/confluence-ebr.jpeg';
 import teamsImg from '../assets/teams-calendar.jpeg';
 import excelImg from '../assets/excel-dashboard.jpeg';
 import notionImg from '../assets/notion-projects.jpeg';
-import TrackerImg from '../assets/Tracker.jpeg';
-import AIAutomateImg from '../assets/Automate.jpeg';
-import SharepointImg from '../assets/Sharepoint.jpeg';
-import AdmincenterImg from '../assets/Admincenter.jpeg';
+import trackerImg from '../assets/tracker.jpeg';
+import automateImg from '../assets/automate.jpeg';
+import sharepointImg from '../assets/sharepoint.jpeg';
+import admincenterImg from '../assets/admincenter.jpeg';
 
 export type ProjectCategory =
   | 'Executive Support'
@@ -116,7 +116,7 @@ export const projects: Project[] = [
     ],
     tools: ['Tracking Systems', 'Operations Management'],
     outcomes: ['Increased field accountability', 'Real-time operational monitoring'],
-    images: [{ src: TrackerImg, alt: 'Supervision Tracker View' }]
+    images: [{ src: trackerImg, alt: 'Supervision Tracker View' }]
   },
   {
     id: 'power-automate-flow',
@@ -131,7 +131,7 @@ export const projects: Project[] = [
     ],
     tools: ['Power Automate', 'Microsoft 365', 'Workflow Automation'],
     outcomes: ['40% reduction in admin workload', 'Faster approval turnarounds'],
-    images: [{ src: AIAutomateImg, alt: 'Power Automate Workflow Diagram' }]
+    images: [{ src: automateImg, alt: 'Power Automate Workflow Diagram' }]
   },
   {
     id: 'sharepoint-portal',
@@ -146,7 +146,7 @@ export const projects: Project[] = [
     ],
     tools: ['SharePoint', 'Microsoft 365'],
     outcomes: ['Secure document storage', 'Standardized document version control'],
-    images: [{ src: SharepointImg, alt: 'SharePoint Intranet Portal' }]
+    images: [{ src: sharepointImg, alt: 'SharePoint Intranet Portal' }]
   },
   {
     id: 'admin-center-control',
@@ -161,6 +161,6 @@ export const projects: Project[] = [
     ],
     tools: ['M365 Admin Center', 'IT Support', 'Security'],
     outcomes: ['Enhanced tenant security', 'Streamlined user provisioning'],
-    images: [{ src: AdmincenterImg, alt: 'M365 Admin Center Interface' }]
+    images: [{ src: admincenterImg, alt: 'M365 Admin Center Interface' }]
   }
 ];
