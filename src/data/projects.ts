@@ -3,6 +3,11 @@ import confluenceImg from '../assets/confluence-ebr.jpeg';
 import teamsImg from '../assets/teams-calendar.jpeg';
 import excelImg from '../assets/excel-dashboard.jpeg';
 import notionImg from '../assets/notion-projects.jpeg';
+import SupervisionTrackerdashboardImg from '../assets/Supervision-Tracker.jpeg';
+import PowerAutomateImg from '../assets/PowerAutomate.jpeg';
+import SharepointImg from '../assets/Sharepoint.jpeg';
+import AdmincenterControlImg from '../assets/AdmincenterControl.jpeg';
+
 
 export type ProjectCategory =
   | 'Executive Support'
@@ -132,5 +137,86 @@ export const projectCategories: (ProjectCategory | 'All')[] = [
   'Projects',
   'Operations',
   'Reporting',
-  'Planning'
+  'Planning',
+ {
+    id: 'supervision-tracker-dashboard',
+    title: 'Supervision Tracker Dashboard',
+    category: 'Reporting',
+    short: 'Automated tracking dashboard for staff supervisions and compliance logging.',
+    role: 'IT Administrator & Program Assistant',
+    responsibilities: [
+      'Designed custom Excel tracking sheet for supervision schedules',
+      'Configured automated date calculations and conditional formatting'
+    ],
+    tools: ['Excel', 'SharePoint'],
+    outcomes: [
+      'Improved compliance monitoring accuracy',
+      'Reduced manual administrative tracking time'
+    ],
+    images: {
+      src: SupervisionTrackerdashboardImg,
+      alt: ['Supervision Tracker Dashboard Screenshot']
+    }
+  },
+  {
+    id: 'power-automate-workflow',
+    title: 'Power Automate Verification Flow',
+    category: 'Operations',
+    short: 'Multi-stage automated verification flow integrated with SharePoint lists and Outlook.',
+    role: 'IT Administrator',
+    responsibilities: [
+      'Built automated trigger conditions and switch branching logic',
+      'Configured email notifications for Care Coordinators and Administrators'
+    ],
+    tools: ['Power Automate', 'SharePoint', 'Outlook'],
+    outcomes: [
+      'Eliminated manual notification delays',
+      'Streamlined internal approval workflows'
+    ],
+    images: {
+      src: PowerAutomateImg,
+      alt: ['Power Automate Workflow Diagram']
+    }
+  },
+  {
+    id: 'sharepoint-data-migration',
+    title: 'SharePoint Architecture & Data Governance',
+    category: 'Executive Support',
+    short: 'Cloud restructuring and file taxonomy standardization for over 1,500 legacy documents.',
+    role: 'IT Administrator',
+    responsibilities: [
+      'Executed full file migration from Dropbox to structured SharePoint libraries',
+      'Standardized metadata taxonomies and configured security clearance levels'
+    ],
+    tools: ['SharePoint', 'Microsoft 365'],
+    outcomes: [
+      'Migrated and standardized 1,500+ files in under two weeks',
+      'Enhanced document access security and file organization'
+    ],
+    images: {
+      src: SharepointImg,
+      alt: ['SharePoint Site Structure']
+    }
+  },
+  {
+    id: 'admin-center-control',
+    title: 'Microsoft 365 Admin Center Governance',
+    category: 'Operations',
+    short: 'Centralized cloud administration, user access control, and policy enforcement.',
+    role: 'IT Administrator',
+    responsibilities: [
+      'Managed user licensing, security clearance levels, and active permissions',
+      'Monitored system access logs and enforced compliance standards'
+    ],
+    tools: ['Microsoft 365', 'Admin Center'],
+    outcomes: [
+      'Standardized user management across active administrative accounts',
+      'Maintained organizational compliance and access control'
+    ],
+    images: {
+      src: AdmincenterControlImg,
+      alt: ['Microsoft 365 Admin Center Control Panel']
+    }
+  },
+}
 ];
